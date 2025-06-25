@@ -1,0 +1,46 @@
+export default function Register() {
+  return (
+    <div className="container mt-5" role="main" aria-label="Page d'inscription">
+      <h1 className="text-center" tabIndex="0">Inscription</h1>
+      <form className="mt-4" aria-label="Formulaire d'inscription">
+        <div className="mb-3">
+          <label htmlFor="username" className="form-label">Nom d'utilisateur</label>
+          <input
+            type="text"
+            className="form-control"
+            id="username"
+            aria-required="true"
+            required
+          />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="email" className="form-label">Email</label>
+          <input
+            type="email"
+            className="form-control"
+            id="email"
+            aria-required="true"
+            required
+          />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="password" className="form-label">Mot de passe</label>
+          <input
+            type="password"
+            className="form-control"
+            id="password"
+            aria-required="true"
+            required
+          />
+        </div>
+        <button
+          type="submit"
+          className="btn btn-primary w-100"
+          aria-label="S'inscrire"
+        >
+          S'inscrire
+        </button>
+      </form>
+    </div>
+  );
+}
