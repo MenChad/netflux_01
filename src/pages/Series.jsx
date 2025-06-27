@@ -2,80 +2,54 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import catalogueData from './catalogue.json';
 
-export default function Search() {
-  const [search, setSearch] = useState("");
-  const [selectedGenre, setSelectedGenre] = useState("Tous");
+export default function Series() {
+  const series = catalogueData.catalogue.filter(catalogue => catalogue.type === 'serie');
+  const [index, setIndex] = useState(0);
 
-  // Récupérer tous les genres uniques du catalogue
-  const allGenres = [
-    ...new Set(
-      catalogueData.catalogue.flatMap(item => item.genre)
-    ),
-  ];
+  const getVisibleSeries = () => {
+    const visible = [];
+    for (let i = 0; i < 5; i++) {
+      visible.push(series[(index + i) % series.length]);
+    }
+    return visible;
+  };
 
-  // Filtrer et trier par ordre alphabétique + genre
-  const filteredCatalogue = catalogueData.catalogue
-    .filter(item =>
-      item.titre.toLowerCase().includes(search.toLowerCase()) &&
-      (selectedGenre === "Tous" || item.genre.includes(selectedGenre))
-    )
-    .sort((a, b) => a.titre.localeCompare(b.titre));
+  const prevSerie = () => setIndex(index === 0 ? series.length - 1 : index - 1);
+  const nextSerie = () => setIndex((index + 1) % series.length);
 
   return (
-    <div
-      className="container mt-5 text-center"
-      role="main"
-      aria-label="Recherche dans le catalogue"
-    >
-      <h2 className="mt-5" tabIndex="0">Recherche</h2>
-      <input
-        type="text"
-        placeholder="Rechercher par titre..."
-        value={search}
-        onChange={e => setSearch(e.target.value)}
-        className="form-control mb-4"
-        style={{ maxWidth: 400, margin: "0 auto" }}
-        aria-label="Rechercher un titre dans le catalogue"
-        aria-describedby="search-help"
-      />
-
-      <div className="mb-4" role="group" aria-label="Filtrer par genre">
+    <div className="container mt-5 text-center" role="main" aria-label="Section catalogue séries">
+      <h1 tabIndex="0">Mes Séries</h1>
+      <div className="d-flex justify-content-center align-items-center" style={{ minHeight: "400px" }}>
         <button
-          role="button"
-          className={`btn btn-outline-primary mx-1 ${selectedGenre === "Tous" ? "active" : ""}`}
-          onClick={() => setSelectedGenre("Tous")}
-          aria-pressed={selectedGenre === "Tous"}
-          aria-label="Afficher tous les genres"
+          className="btn btn-secondary mx-2"
+          onClick={prevSerie}
+          aria-label="Afficher les séries précédentes"
         >
-          Tous
+          Précédent
         </button>
-        {allGenres.map((genre) => (
-          <button
-            role="button"
-            key={genre}
-            className={`btn btn-outline-primary mx-1 ${selectedGenre === genre ? "active" : ""}`}
-            onClick={() => setSelectedGenre(genre)}
-            aria-pressed={selectedGenre === genre}
-            aria-label={`Filtrer par genre ${genre}`}
-          >
-            {genre}
-          </button>
-        ))}
-      </div>
-
-      <div className="d-flex flex-wrap justify-content-center" role="list" aria-label="Résultats de la recherche">
-        {filteredCatalogue.map((item) => (
-          <div key={item.id} className="m-3" role="listitem">
-            <Link to={`/${item.type === "film" ? "films" : "series"}/${encodeURIComponent(item.titre)}`}>
-              <img
-                src={item.affiche}
-                alt={`Affiche de ${item.titre}`}
-                style={{ width: "200px", height: "300px", objectFit: "cover", borderRadius: "10px" }}
-              />
-              <p>{item.titre}</p>
-            </Link>
-          </div>
-        ))}
+        <div className="d-flex" role="list" aria-label="Liste des séries affichées">
+          {getVisibleSeries().map((serie) => (
+            <div key={serie.id} className="mx-2" role="listitem">
+              <Link to={`/series/${encodeURIComponent(serie.titre)}`}>
+                <img
+                  src={serie.affiche}
+                  alt={`Affiche de la série ${serie.titre}`}
+                  className="img-fluid rounded"
+                  style={{ width: "200px", height: "300px", objectFit: "cover" }}
+                />
+                <p>{serie.titre}</p>
+              </Link>
+            </div>
+          ))}
+        </div>
+        <button
+          className="btn btn-secondary mx-2"
+          onClick={nextSerie}
+          aria-label="Afficher les séries suivantes"
+        >
+          Suivant
+        </button>
       </div>
     </div>
   );

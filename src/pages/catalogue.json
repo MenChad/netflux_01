@@ -250,29 +250,6 @@
     },
     {
       "id": 12,
-      "titre": "Astérix & Obélix : Le combat des chefs",
-      "affiche": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hqfDMxW32mUXvyw8tVACpNb3oTU.jpg",
-      "genre": ["Comédie", "Aventure", "Famille"],
-      "duree": 112,
-      "saisons": 1,
-      "annee": 2023,
-      "description": "L'unique fille de l'Empereur de Chine est emprisonnée dans la tour de Babel. Astérix et Obélix se lancent dans une nouvelle aventure pour la sauver, accompagnés de leur fidèle Idéfix.",
-      "type": "serie",
-      "restriction": null,
-      "resolutionmax": null,
-      "realisation": null,
-      "distribution": null,
-      "favori": false,
-      "download": false,
-      "watchtime": 0,
-      "view": 0,
-      "miniPortrait": null,
-      "titleIMG": null,
-      "miniPaysage": null,
-      "episodes": null
-    },
-    {
-      "id": 13,
       "titre": "À bout",
       "affiche": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/v5Xsg4NGS4mJ3DpwuN5kUnZxhL3.jpg",
       "genre": ["Action", "Thriller", "Crime"],
@@ -294,7 +271,7 @@
       "miniPaysage": null
     },
     {
-      "id": 14,
+      "id": 13,
       "titre": "K.O.",
       "affiche": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uTbQg4zQ0eGXlKl8imLu64LLJQX.jpg",
       "genre": ["Drame", "Sport"],
@@ -316,7 +293,7 @@
       "miniPaysage": null
     },
     {
-      "id": 15,
+      "id": 14,
       "titre": "You",
       "affiche": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/doavJnd27DZv6wxruPUC38Od9NC.jpg",
       "genre": ["Thriller", "Drame", "Crime"],
@@ -339,7 +316,7 @@
       "episodes": null
     },
     {
-      "id": 16,
+      "id": 15,
       "titre": "Black Widow",
       "affiche": "https://image.tmdb.org/t/p/w500/qAZ0pzat24kLdO3o8ejmbLxyOac.jpg",
       "genre": ["Action", "Aventure", "Science-Fiction"],
@@ -361,7 +338,7 @@
       "miniPaysage": null
     },
     {
-      "id": 17,
+      "id": 16,
       "titre": "TENET",
       "affiche": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/72SOtZnFhCumLRZhoXlX8g2IkgF.jpg",
       "genre": ["Science-Fiction", "Action", "Thriller", "Espionnage"],
@@ -383,7 +360,7 @@
       "miniPaysage": "TenetPaysage.png"
     },
     {
-      "id": 18,
+      "id": 17,
       "titre": "Sinners",
       "affiche": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9ZmdDOIbiFCZOvRXBQ7muWUu32l.jpg",
       "genre": ["Science-Fiction", "Action", "Thriller", "Espionnage"],
@@ -405,13 +382,13 @@
       "miniPaysage": "SinnersPaysage.png"
     },
     {
-      "id": 19,
+      "id": 18,
       "titre": "Avengers : Infinity War",
       "affiche": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hSfuKPtyEryeFzapZ8UgZd4aESu.jpg",
       "genre": ["Science-Fiction", "Action", "Thriller", "Espionnage"],
-      "duree": 135,
+      "duree": 149,
       "saisons": null,
-      "annee": 2020,
+      "annee": 2018,
       "description": "Les Avengers et leurs alliés devront être prêts à tout sacrifier pour neutraliser le redoutable Thanos avant que son attaque éclair ne conduise à la destruction complète de l'univers.",
       "type": "film",
       "restriction": "+12",
@@ -427,16 +404,16 @@
       "miniPaysage": "AvergersinfinitywarPaysage.png"
     },
     {
-      "id": 20,
+      "id": 19,
       "titre": "Shrek",
       "affiche": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rJIju4i2sENrfTbAXwL9OKv2e1i.jpg",
-      "genre": ["Science-Fiction", "Action", "Thriller", "Espionnage"],
-      "duree": 135,
+      "genre": ["Animation", "Comédie", "Famille"],
+      "duree": 90,
       "saisons": null,
-      "annee": 2020,
-      "description": "Muni d'un seul mot, \"Tenet,\" et décidé à se battre pour sauver le monde...",
+      "annee": 2001,
+      "description": "Un ogre verdâtre et malodorant vit paisiblement dans son marécage jusqu'au jour où une ribambelle de personnages de contes de fées envahit son territoire. Pour retrouver sa tranquillité, Shrek passe un marché avec Lord Farquaad.",
       "type": "film",
-      "restriction": "+12",
+      "restriction": "Tous publics",
       "resolutionmax": "4K",
       "realisation": null,
       "distribution": null,
@@ -449,13 +426,79 @@
       "miniPaysage": "ShrekPaysage.jpg"
     },
     {
+      "id": 20,
+      "titre": "Astérix & Obélix : Mission Cléopâtre",
+      "affiche": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hqfDMxW32mUXvyw8tVACpNb3oTU.jpg",
+      "genre": ["Comédie", "Aventure", "Famille"],
+      "duree": 107,
+      "saisons": null,
+      "annee": 2002,
+      "description": "À la demande de Cléopâtre et avec l'aide des Gaulois, Numérobis se lance dans le pari fou d'ériger un palais en 3 mois, tout en déjouant les fourberies d'Amonbofis.",
+      "type": "film",
+      "restriction": "+7",
+      "resolutionmax": "HD",
+      "realisation": "Alain Chabat",
+      "distribution": "Gerard Depardieu, Jamel Debbouze, Christian Clavier, Dieudonné",
+      "favori": true,
+      "download": true,
+      "watchtime": 100,
+      "view": 400000,
+      "miniPortrait": "AsterixmissioncleopatrePortrait.jpg",
+      "titleIMG": "AsterixmissioncleopatreTitle.png",
+      "miniPaysage": "AsterixmissioncleopatrePaysage.png"
+    },
+    {
       "id": 21,
+      "titre": "Case Départ",
+      "affiche": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/jBxLQKmVJ4xICf0NryoJntM5sun.jpg",
+      "genre": ["Comédie", "Français"],
+      "duree": 94,
+      "saisons": null,
+      "annee": 2011,
+      "description": "Victimes d'un sort, deux hommes qui n'ont rien en commun à part leur père se retrouvent dans le passé, où l'esclavage existe encore. Pour survivre, ils vont devoir s'entendre.",
+      "type": "film",
+      "restriction": "+12",
+      "resolutionmax": "HD",
+      "realisation": "Fabrice Eboué, Thomas Ngijol",
+      "distribution": "Fabrice Eboué, Thomas Ngijol, Frank Migeon",
+      "favori": true,
+      "download": true,
+      "watchtime": 0,
+      "view": 500000,
+      "miniPortrait": "CasedepartPortrait.jpg",
+      "titleIMG": "CasedepartTitle.png",
+      "miniPaysage": "CasedepartPaysage.jpg"
+    },
+    {
+      "id": 22,
+      "titre": "Babylon",
+      "affiche": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/vxlBfQANmzReZqtpE2tad9gokf.jpg",
+      "genre": ["Drame", "Comédie"],
+      "duree": 189,
+      "saisons": null,
+      "annee": 2022,
+      "description": "Hollywood, années 1920, l'industrie est en train de passer du cinéma muet au cinéma parlé. Ce film \"Babylon\" suit l'ascension et la chute de quelques individus, dont Nellie LaRoy et Jack Conrad, à une époque où la décadence et la dépravation sont omniprésentes dans cette industrie.",
+      "type": "film",
+      "restriction": "+12",
+      "resolutionmax": "4K",
+      "realisation": "Damien Chazelle",
+      "distribution": "Margot Robbie, Diego Calva, Brad Pitt, Tobey Maguire",
+      "favori": true,
+      "download": true,
+      "watchtime": 100,
+      "view": 600000,
+      "miniPortrait": "BabylonPortrait.png",
+      "titleIMG": "BabylonTitle.png",
+      "miniPaysage": "BabylonPaysage.png"
+    },
+    {
+      "id": 23,
       "titre": "South Park",
       "affiche": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xJnbMTrJ2fl1AXAKx34U4BPvOhs.jpg",
       "genre": ["Comédie"],
       "duree": 22,
       "saisons": 2,
-      "annee": 2010,
+      "annee": 1997,
       "description": "La petite ville de South Park dans le Colorado est le théâtre des aventures de Cartman, Stan, Kyle et Kenny, quatre enfants qui ont un langage un peu... décalé !",
       "type": "serie",
       "restriction": "+12",
@@ -476,54 +519,60 @@
             {
               "titre": "Cartman a une sonde anale",
               "duree": "22min",
-              "synopsis": "Les aliens implantent un émetteur dans Cartman et kidnappent le frère de Kyle"
+              "minia": "ep1S1southpark.png",
+              "synopsis": "Les aliens implantent un émetteur dans Cartman et kidnappent le frère de Kyle",
+              "watchtime": 98
             },
             {
               "titre": "Muscle Plus 4000",
               "duree": "22min",
-              "synopsis": "Cartman tente de se muscler en prenant du Muscle Plus 4000. De son côté, M. Garrison essaye d'assassiner Kathie Lee Gifford."
+              "minia": "ep2S1southpark.png",
+              "synopsis": "Cartman tente de se muscler en prenant du Muscle Plus 4000. De son côté, M. Garrison essaye d'assassiner Kathie Lee Gifford.",
+              "watchtime": 98
             },
             {
               "titre": "Volcano",
               "duree": "22min",
-              "synopsis": "Les enfants partent à la chasse avec Jimbo, l'oncle de Stan, lorsqu'un volcano entre en éruption. Cartman invente la légende de Kucrapok pour faire peur aux autres mais est-ce seulement imaginaire ?"
+              "minia": "ep3S1southpark.png",
+              "synopsis": "Les enfants partent à la chasse avec Jimbo, l'oncle de Stan, lorsqu'un volcano entre en éruption. Cartman invente la légende de Kucrapok pour faire peur aux autres mais est-ce seulement imaginaire ?",
+              "watchtime": 98
             },
             {
               "titre": "Une promenade complètement folle avec Al Super Gay",
               "duree": "22min",
-              "synopsis": "Les enfants cherchent à faire un croisement entre un éléphant et un cochon de lait."
+              "minia": "ep4S1southpark.png",
+              "synopsis": "Les enfants cherchent à faire un croisement entre un éléphant et un cochon de lait.",
+              "watchtime": 98
             },
             {
               "titre": "Un éléphant fait l'amour à un cochon",
               "duree": "22min",
-              "synopsis": "Les enfants cherchent à faire un croisement entre un éléphant et un cochon de lait."
+              "minia": "ep5S1southpark.png",
+              "synopsis": "Les enfants cherchent à faire un croisement entre un éléphant et un cochon de lait.",
+              "watchtime": 0
             },
             {
               "titre": "La Mort",
               "duree": "22min",
-              "synopsis": "Marvin Marsh, le grand père de Stan, veut absolument mourir. Il demande à son petit-fils de l'aider."
+              "minia": "ep6S1southpark.png",
+              "synopsis": "Marvin Marsh, le grand père de Stan, veut absolument mourir. Il demande à son petit-fils de l'aider.",
+              "watchtime": 98
             },
             {
               "titre": "Conjonctivite",
               "duree": "22min",
-              "synopsis": "Les aliens implantent un émetteur dans Cartman et kidnappent le frère de Kyle"
+              "minia": "ep7S1southpark.png",
+              "synopsis": "Les aliens implantent un émetteur dans Cartman et kidnappent le frère de Kyle",
+              "watchtime": 50
             },
             {
               "titre": "Le Petit Éthernopien",
               "duree": "22min",
-              "synopsis": "Pensant recevoir une montre à quartz, les enfants envoient cinq dollars en Éthiopie, mais ils reçoivent en fait un enfant du pays."
+              "minia": "ep8S1southpark.png",
+              "synopsis": "Pensant recevoir une montre à quartz, les enfants envoient cinq dollars en Éthiopie, mais ils reçoivent en fait un enfant du pays.",
+              "watchtime": 0
             },
-            {
-              "titre": "Monsieur Hankey, le petit caca Noël",
-              "duree": "22min",
-              "synopsis": "Noël approche et les enfants préparent un spectacle sur la naissance de Jésus. Mais voilà qui ne plait pas aux parents de Kyle, dont la famille est juive."
-            },
-            {
-              "titre": "Damien",
-              "duree": "22min",
-              "synopsis": "Damien, le fils de Satan, arrive à South Park où son père et Jesus s'apprêtent à livrer bataille."
-            },
-            {
+       {
               "titre": "La mère de Cartman est une folle du cul",
               "duree": "22min",
               "synopsis": "Cartman ignore qui est son père. Alphonse Mephisto veut bien l'aider, mais les recherches coûtent 3000 $."

@@ -1,8 +1,7 @@
-import Hero from "./Hero";
-import Heros from "./Heros";
 import { useSelector, useDispatch } from "react-redux";
 import { logout } from "../slices/authSlice";
 import { useNavigate } from "react-router-dom";
+import Home from "./Home";
 
 export default function AdminDashboard() {
   const { user } = useSelector((state) => state.auth);
@@ -22,8 +21,9 @@ export default function AdminDashboard() {
           Bienvenue, <span aria-live="polite">{user?.name || "Administrateur"}</span>
         </p>
       </header>
-      <Hero />
-      <Heros />
+
+      < Home />
+
       <button
         className="logout-button"
         onClick={handleLogout}
