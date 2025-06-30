@@ -14,12 +14,18 @@ export default function Login() {
     identifiant: "",
     password: "",
   });
-
   useEffect(() => {
     if (isConnected) {
-      navigate("/admin");
+      if (
+        connectForm.identifiant === "admin" &&
+        connectForm.password === "admin"
+      ) {
+        navigate("/admin");
+      } else {
+        navigate("/user");
+      }
     }
-  }, [isConnected, navigate]);
+  }, [isConnected, navigate, connectForm]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

@@ -12,6 +12,7 @@ import FilmsDetails from './pages/FilmsDetails';
 import Register from './pages/Register';
 import AdminDashboard from './pages/AdminDashboard';
 import Search from './pages/Search';
+import UserDashboard from './pages/UserDashboard';
 
 
 export default createBrowserRouter([
@@ -26,6 +27,7 @@ export default createBrowserRouter([
       { path: '/series/:seriesId', element: <SeriesDetails /> },
       { path: '/series', element: <Series /> },
       { path: '/admin', element: <AdminDashboard /> },
+      { path: '/user', element: <UserDashboard /> },
       { path: '/search', element: <Search /> },
 
 

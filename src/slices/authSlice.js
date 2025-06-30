@@ -5,19 +5,20 @@ export const loginUser = createAsyncThunk(
     async (credentials)=>{
         return new Promise((resolve, reject)=>{
             setTimeout(()=>{
-                if(credentials.identifiant === "admin" && credentials.password === "admin"){
+                if(
+                    (credentials.identifiant === "admin" && credentials.password === "admin") ||
+                    (credentials.identifiant === "user" && credentials.password === "user")
+                ){
                     resolve({
-                        id: 1,
-                        identifiant: "admin",
-                        password: "admin"
+                        id: credentials.identifiant === "admin" ? 1 : 2,
+                        identifiant: credentials.identifiant,
+                        password: credentials.password
                     })
-
                 }else{
                     reject(new Error("Identifiant ou mot de passe incorrect"))
-                
-            }}, 1000)
+                }
+            }, 1000)
         })
-
     }
 )
 

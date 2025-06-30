@@ -1,4 +1,13 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Register() {
+  const navigate = useNavigate();
+
+
+    const handleLogin = () => {
+     
+      navigate("/login");
+    };
   return (
     <div className="container mt-5" role="main" aria-label="Page d'inscription">
       <h1 className="text-center" tabIndex="0">Inscription</h1>
@@ -36,6 +45,7 @@ export default function Register() {
         <button
           type="submit"
           className="btn btn-primary w-100"
+          onClick={handleLogin}
           aria-label="S'inscrire"
         >
           S'inscrire
