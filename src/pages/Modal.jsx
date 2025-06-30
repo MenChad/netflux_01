@@ -18,7 +18,8 @@ export default function Modal({ film, onClose }) {
     };
 
   return (
-    <div className="modal-backdrop" onClick={onClose}>
+  <div className="modal-container">
+    <div className="modal-backdrop  " onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <div className="modal-image-wrapper">
           <img
@@ -168,5 +169,6 @@ export default function Modal({ film, onClose }) {
         </button>
       </div>
     </div>
+  </div>
   );
 }

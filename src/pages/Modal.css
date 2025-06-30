@@ -19,6 +19,7 @@
   height: 90vh;
   overflow-y: auto;
   position: relative;
+  margin-top: 85px;
 }
 /*/////////////////////////////////////////////// superposition de l image t bouton///////////////////*/
 .modal-image-wrapper {
@@ -187,11 +188,13 @@ font-size: 14px;
   position: fixed;
   top: 5.5%;
   right: 20.2%;
+  margin-top: 30px;
+
 }
 .CloseModalButton svg{
   width: 60px;
   height: 60px;
-  
+  margin-top: 1px;  
 } 
 .CloseModalButton:hover {
   transform: scale(1.2);

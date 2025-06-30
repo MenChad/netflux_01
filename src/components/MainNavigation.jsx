@@ -14,7 +14,6 @@ export default function MainNavigation() {
     document.documentElement.setAttribute('data-bs-theme', shouldBeDark ? 'dark' : 'light');
   }, []);
 
-  // Sauvegarder et appliquer le thème
   const toggleTheme = () => {
     const newTheme = !isDark;
     setIsDark(newTheme);
