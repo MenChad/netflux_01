@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 export default function MainNavigation() {
   const [isDark, setIsDark] = useState(false);
 
-  // Charger le thème au démarrage
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;

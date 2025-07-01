@@ -1,7 +1,10 @@
+import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 export default function Register() {
   const navigate = useNavigate();
+
+  const { loading } = useSelector((state) => state.auth);
 
 
     const handleLogin = () => {
@@ -48,7 +51,7 @@ export default function Register() {
           onClick={handleLogin}
           aria-label="S'inscrire"
         >
-          S'inscrire
+           {loading ? "inscription en cours..." : "S'inscrire"}
         </button>
       </form>
     </div>
